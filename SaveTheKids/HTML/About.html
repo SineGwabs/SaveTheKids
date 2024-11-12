@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <meta name="description" content="Save the Children South Africa is dedicated to ensuring every child grows up healthy, educated, and safe. Learn about our goals, programs, and how you can help.">
+    <meta name="keywords" content="Save the Children, South Africa, Child Safety, Education, Health, Donate">
+    <meta name="author" content="Save the Children South Africa">
+    <link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+    <header>
+        <img src="../Images/Logo.jpg" alt="Save the Children South Africa Logo">
+        <nav class="navbar">
+            <a href="Home.html">Home</a> |
+            <a href="About.html">About Us</a> |
+            <a href="Goals.html">Goals</a> |
+            <a href="News.html">News</a> |
+            <a href="Donate.html">Donate</a> |
+            <a href="Contactus.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <img src ="../Images/AboutUs.png">
+
+    <main>
+        <h1>About Us</h1>
+    
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>At Save the Children, our mission is to ensure that every child has the opportunity to thrive, regardless of their circumstances. Founded in 1919, we are a global leader in the fight for children’s rights, providing life-saving aid and long-term support to children in need around the world.</p>
+        </div>
+    
+        <h2>Our work is grounded in the belief that every child deserves a future. We operate in over 100 countries, delivering programs that provide education, health care, protection from harm, and emergency response in times of crisis. From advocating for policy changes to working directly with children and communities, we are committed to creating lasting change.</h2>
+    
+        <h2>We believe in the power of community and collaboration. By partnering with governments, local organizations, and dedicated individuals, we ensure that our efforts are sustainable and impactful. Our programs are designed with children at the center, prioritizing their voices and their needs.</h2>
+    
+        <h2>Save the Children is funded by donations from individuals, corporations, and foundations who share our vision of a world where every child is safe, healthy, and able to achieve their full potential. We are proud to be a transparent and accountable organization, consistently earning top ratings from charity evaluators.</h2>
+    
+        <h2>Together, we can create a brighter future for the next generation. Join us in our mission to save lives, fight for children's rights, and help them fulfill their potential.</h2>
+    </main>
+    
+    <footer>
+        <p>2024, Save The Children.</p>
+         <p>Save The Children &copy; <span id="date"></span></p>
+</footer>
+
+<script>
+    // Get today's date
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString('en-ZA', { // Format for South African date style
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+    // Display date in the span with id "date"
+    document.getElementById('date').textContent = formattedDate;
+</script>
+    </footer>
+    
+
+</body>
+</html>

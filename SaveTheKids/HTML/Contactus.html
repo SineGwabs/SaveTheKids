@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="Save the Children South Africa is dedicated to ensuring every child grows up healthy, educated, and safe. Learn about our goals, programs, and how you can help.">
+    <meta name="keywords" content="Save the Children, South Africa, Child Safety, Education, Health, Donate">
+    <meta name="author" content="Save the Children South Africa">
+    <link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+    <header>
+        <img src="../Images/Logo.jpg" alt="Save the Children South Africa Logo">
+        <nav class="navbar">
+            <a href="Home.html">Home</a> |
+            <a href="About.html">About Us</a> |
+            <a href="Goals.html">Goals</a> |
+            <a href="News.html">News</a> |
+            <a href="Donate.html">Donate</a> |
+            <a href="Contactus.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>How to Reach Us</h1>
+        
+        <h2>General Inquiries</h2>
+        <p>General Inquiries
+            If you have any general questions or need more information about our organization, please feel free to reach out to us:
+            📞 Phone: +27 (0)11 123 4567
+            📧 Email: info@savethechildren.org.za</p>
+
+            <form action="mailto:example@example.com" method="post" enctype="text/plain" id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" placeholder="Subject of enquiry">
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Your message" rows="4" required></textarea>
+            
+                <button type="submit">Submit</button>
+            </form>
+            
+
+        <h2>Visit Us</h2>
+        <p>Our headquarters are located at:</p>
+        <p>
+            Save the Children South Africa<br>
+            123 Hope Street<br>
+            Johannesburg, South Africa
+        </p>
+
+    </main>
+
+    <script>document.addEventListener('DOMContentLoaded', function () {
+        // Access form fields
+        const nameField = document.getElementById('name');
+        const emailField = document.getElementById('email');
+        const messageField = document.getElementById('message');
+    
+        // Function to clear initial value on focus
+        function clearFieldOnFocus(field) {
+            field.addEventListener('focus', function () {
+                field.placeholder = ''; // Clears the placeholder
+            });
+        }
+    
+        // Clear placeholder text when a user clicks on each field
+        clearFieldOnFocus(nameField);
+        clearFieldOnFocus(emailField);
+        clearFieldOnFocus(messageField);
+    
+        // Form validation on submit
+        document.getElementById('contactForm').addEventListener('submit', function (event) {
+            // Check if critical fields are empty
+            if (!nameField.value) {
+                alert('Name is required.');
+                nameField.focus();
+                event.preventDefault(); // Prevents form submission
+            } else if (!emailField.value) {
+                alert('Email is required.');
+                emailField.focus();
+                event.preventDefault(); // Prevents form submission
+            } else if (!messageField.value) {
+                alert('Message is required.');
+                messageField.focus();
+                event.preventDefault(); // Prevents form submission
+            }
+        });
+    }); 
+    </script>
+
+    
+</body>
+<img src="../Images/Contact Us.jpg" width="600px" height="400px"  alt="Contact Us">
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAVE THE CHILDREN - Home</title>
+    <meta name="description" content="Save the Children South Africa is dedicated to ensuring every child grows up healthy, educated, and safe. Learn about our goals, programs, and how you can help.">
+    <meta name="keywords" content="Save the Children, South Africa, Child Safety, Education, Health, Donate">
+    <meta name="author" content="Save the Children South Africa">
+
+    <link rel="stylesheet" href="../css/Style.css">
+</head>
+<body>
+    <header>
+        <img src="../Images/Logo.jpg" alt="Save the Children South Africa Logo">
+        <nav class="navbar">
+            <a href="Home.html">Home</a> |
+            <a href="About.html">About Us</a> |
+            <a href="Goals.html">Goals</a> |
+            <a href="News.html">News</a> |
+            <a href="Donate.html">Donate</a> |
+            <a href="Contactus.html">Contact Us</a>
+        </nav>
+        
+    </header>
+
+    <main>
+        <h1>Welcome to Save the Children South Africa </h1>
+        <p>At Save the Children South Africa, we are committed to ensuring that every child in our nation has the opportunity to thrive. Our work focuses on improving the lives of the most vulnerable children, helping them to grow up healthy, educated, and safe from harm. We believe that every child deserves a future, and with your help, we can make that belief a reality.</p>
+
+        <h2>Together, We Can Change the Future for Every Child</h2>
+        <p>We work tirelessly across South Africa to protect and support children, ensuring they have access to the resources and opportunities they need to succeed. From providing quality education and healthcare to safeguarding children from abuse and exploitation, our mission is to create a lasting impact in their lives and communities.</p>
+
+        <img src="../Images/Home.png" alt="Kids hugging">
+
+        <h2>Volunteer with Us:</h2>
+        <p>your passion and skills can make a difference in this world. Learn more about our volunteer programs and opportunities by visiting our <a href="Contactus.html">Contact Us</a> page.</p>
+
+        <img src="../Images/MidPhoto.png" alt="Our Vision">
+
+        <h2>Donate to Support Our Mission</h2>
+        <p>Every contribution, wheather big or small helps us, they directly impact the lives of children in need.  If you are interested in donating, visit our <a href="Donate.html">Donate</a> page. Your contribution will surely make a difference.</p>
+
+        <h2>Stay Informed and get Involved:</h2>
+        <p>Sign up for our <a href="News.html">newsletter</a> to recieve the latest updates on our events and projects. By subscribing, you will always stay informed.</p>
+    </main>
+
+    <footer>
+        <p><strong>Privacy Statement:</strong></p>
+        <p>At Save the children, we protect our users privacy. Any personal information is kept private and confidential.</p>
+        <p>Save The Children &copy; <span id="date"></span></p>
+</footer>
+
+<script>
+    // Get today's date
+    const today = new Date();
+    const formattedDate = today.toLocaleDateString('en-ZA', { // Format for South African date style
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+    // Display date in the span with id "date"
+    document.getElementById('date').textContent = formattedDate;
+</script>
+
+    
+</body>
+</html>
